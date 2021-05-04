@@ -27,6 +27,9 @@
                 <li>
                     <a href="#resume-section">Resume</a>
                 </li>
+                <li>
+                    <a href="#more-section">More</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -36,11 +39,16 @@
         <div class="hero-textblock">
             <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
                 itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</h2>
+            <img id="profile-pic" src="./assets/images/profile pic.jpg" alt="Kolby standing in snow-covered woods">
         </div>
     </section>
 
     <!-- about me section -->
-    <section class="about-me">
+    <section id="about-me">
+        <h2>About Me:</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
 
     </section>
 
@@ -48,7 +56,7 @@
     <div class="main-content">
 
     <!-- work section -->
-        <section>
+        <section class="row-one" id="work-section">
             <div class="box">
                 <div class="flex-row">
                     <button class="section-title" onclick="myFunction1()">
@@ -64,7 +72,7 @@
         </section>
 
         <!-- contact me section -->
-        <section>
+        <section class="row-one" id="contact-me-section">
             <div class="box">
                 <div class="flex-row">
                     <button class="section-title" onclick="myFunction2()">
@@ -80,7 +88,7 @@
         </section>
         
         <!-- resume section -->
-        <section>
+        <section class="row-two" id="resume-section">
             <div class="box">
                 <div class="flex-row">
                     <button class="section-title" onclick="myFunction3()">
@@ -96,7 +104,7 @@
         </section>
 
         <!-- more section -->
-        <section>
+        <section class="row-two" id="more-section">
             <div class="box">
                 <div class="flex-row">
                     <button class="section-title" onclick="myFunction4()">
@@ -116,6 +124,7 @@
     <!-- footer section -->
     <footer class="footer">
         <h2>Footer Things</h2>
+        <p>Feet</p>
     </footer>
 
     <script type="text/javascript" src="./assets/js/script.js"></script>

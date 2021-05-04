@@ -64,6 +64,27 @@ header nav ul li a:hover {
 /* Hero Begin */
 .hero {
     background-color:silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.hero-textblock {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+    padding: 10px;
+    width: 60%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
 /* Hero End */
 
@@ -71,12 +92,125 @@ header nav ul li a:hover {
 
 
 
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-between;
+}
 
+.box {
+    padding: 5px 0;
+    align-content: center;
+}
 
+.box button {
+    padding: auto;
+    color: purple;
+    background-color: silver;
+    border: 1px black solid;
+    font-size: 40px;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-content:center;
+    border-radius: 15px;
+}
 
+.box button:hover {
+    color:steelblue;
+    border: 3px black solid;
+}
 
+.row-one {
+
+}
+
+.row-two {
+
+}
+
+#projects, #contact, #resume, #more {
+    display: none;
+}
 
 /* Footer Begin */
+footer {
+    background-color: purple;
+    color: silver;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
 
+footer h2 {
+    font-size: 40px;
+}
+
+footer p {
+    font-size: 25px;
+}
 /* Footer End */
 
+/* Media Queries for screen size */
+@media screen and (max-width:980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+
+    .hero-textblock {
+        width: 100%;
+    }
+
+    .hero-textblock {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .section-title {
+        width: 95%;
+    }
+
+    #about-me p {
+        width: 100%;
+    }
+
+}
