@@ -90,12 +90,19 @@ header nav ul li a:hover {
     line-height: 1.2;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    text:black;
-    text-decoration: white solid 2px;
 }
 
 .hero-textblock h2 {
+    color: white;
+    text-align: center;
     font-size: 50px;
+    border-bottom: solid 3px white;
+    margin: auto 15%;
+}
+
+.hero-textblock p {
+    padding-top: 3%;
+    color: white;
 }
 
 .hero img {
@@ -109,7 +116,20 @@ header nav ul li a:hover {
 
 
 
+#about-me {
+    color: white;
+    text-align: center
+}
 
+#about-me h2 {
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    margin: auto 40%;
+}
+
+#about-me p {
+    font-size: 25px;
+}
 
 .main-content {
     display: flex;
@@ -125,8 +145,8 @@ header nav ul li a:hover {
 
 .box button {
     padding: auto;
-    color: purple;
-    background-color: silver;
+    color: steelblue;
+    background-color: white;
     border: 1px black solid;
     font-size: 40px;
     border-radius: 10px;
@@ -141,6 +161,8 @@ header nav ul li a:hover {
 
 .box button:hover {
     color:steelblue;
+    font-weight:bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 3px black solid;
 }
 
@@ -152,15 +174,63 @@ header nav ul li a:hover {
 
 }
 
+.box ul li {
+    list-style: none;
+    color: white;
+    line-height: 1.5;
+}
+
+#projects ul li a {
+    text-decoration: none;
+    border-bottom: 0;
+    color: white;
+    line-height: 1.5;
+}
+
+#projects ul li a:hover {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact ul li a:hover {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+#resume a {
+    text-decoration: none;
+    color: white;
+}
+
+#resume a:hover {
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 1px white;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#more {
+    color: white;
+    line-height: 1.5;
+}
+
 #projects, #contact, #resume, #more {
     display: none;
 }
 
 /* Footer Begin */
 footer {
-    background-color: purple;
-    color: silver;
-    height: 300px;
+    background-image: url("../images/hero\ background.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    color: steelblue;
+    height: 200px;
     width: 100%;
     text-align: center;
 }
