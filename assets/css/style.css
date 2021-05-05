@@ -11,6 +11,10 @@ body {
 
 /* Header Begin */
 header {
+    background-image: url("../images/hero\ background.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
     padding: 20px 35px;
     background-color:silver;
     font-style: italic;
@@ -19,18 +23,21 @@ header {
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     background-attachment: fixed;
+    z-index: 9999;
 }
 
 header h1 {
     font-weight: bolder;
     font-size: 40px;
-    color: black;
+    color: white;
+    text-decoration: solid black 2px;
 }
 
 header a {
-    text-decoration: none;
-    color: purple;
+    text-decoration: solid black 2px;
+    color: white;
 }
 
 header nav {
@@ -57,31 +64,43 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color:steelblue;
-    border-bottom: black solid 1px;
+    border-bottom: white solid 3px;
+    text-decoration: solid 3px black;
 }
 /* Header End */
 
 /* Hero Begin */
 .hero {
-    background-color:silver;
+    background-image: url("../images/hero\ background.jpg");
+    background-size: cover;
+    background-position: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: center;
+    align-content: flex-start;
+    background-attachment: fixed;
 }
 
 .hero-textblock {
+    background-color: rgba(70, 130, 180, 0.5);
     width: 35%;
-    text-align: right;
+    text-align: left;
     margin: 3.5%;
     font-size: 18px;
     line-height: 1.2;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text:black;
+    text-decoration: white solid 2px;
+}
+
+.hero-textblock h2 {
+    font-size: 50px;
 }
 
 .hero img {
     padding: 10px;
-    width: 60%;
+    width: auto;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
