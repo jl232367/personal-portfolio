@@ -7,6 +7,9 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     background-color: steelblue;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
 }
 
 /* Header Begin */
@@ -25,6 +28,7 @@ header {
     position: sticky;
     top: 0;
     background-attachment: fixed;
+    width: 100%;
     z-index: 9999;
 }
 
@@ -132,46 +136,32 @@ header nav ul li a:hover {
 }
 
 .main-content {
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+
+.main-content h2 {
+    text-align:center;
+    font-size: 40px;
+    border-bottom: 3px solid white;
+    margin: auto 40%;
+    padding-bottom: 5px;
+}
+
+#work-section, #contact-me-section, #resume-section, #more-section {
+    width: 100%;
+    height: auto;
+}
+
+#work-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content:space-between;
+    box-sizing: border-box;
 }
 
 .box {
-    padding: 5px 0;
-    align-content: center;
-}
-
-.box button {
-    padding: auto;
-    color: steelblue;
-    background-color: white;
-    border: 1px black solid;
-    font-size: 40px;
-    border-radius: 10px;
-    height: 100px;
-    width: 400px;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-content:center;
-    border-radius: 15px;
-}
-
-.box button:hover {
-    color:steelblue;
-    font-weight:bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 3px black solid;
-}
-
-.row-one {
-
-}
-
-.row-two {
-
+    width: 100%;
 }
 
 .box ul li {
@@ -180,17 +170,71 @@ header nav ul li a:hover {
     line-height: 1.5;
 }
 
-#projects ul li a {
-    text-decoration: none;
-    border-bottom: 0;
-    color: white;
-    line-height: 1.5;
+#projects {
+    height:auto;
+    width: auto;
+    margin-bottom: 5px;
 }
 
-#projects ul li a:hover {
-    font-weight: bold;
-    border-bottom: 1px solid white;
+#projects h3 {
+    height: 100%;
+    width: 100%;
 }
+
+#projects ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 0;
+    color:rgba(70, 130, 180, 1);
+    background-color:rgba(70, 130, 180, 0.5);
+    line-height: 1.5;
+    width: 100%;
+}
+
+#run-buddy, #rpga, #robot-gladiator {
+    margin-bottom: 5px;
+}
+
+#run-buddy {
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/run-buddy.jpg);
+    background-size:cover;
+    margin-top: 5px;
+}
+
+#row-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#rpga {
+    height: 250px;
+    background-image: url(../images/rpga.png);
+    background-size: cover;
+    align-content: center;
+
+}
+
+#robot-gladiator {
+    height: 250px;
+    background-image: url(../images/robot-gladiator.png);
+    background-size: cover;
+}
+
+#run-buddy:hover, #rpga:hover, #robot-gladiator:hover {
+    border: solid black 3px;
+}
+
+
 
 #contact ul li a {
     text-decoration: none;
@@ -217,10 +261,6 @@ header nav ul li a:hover {
 #more {
     color: white;
     line-height: 1.5;
-}
-
-#projects, #contact, #resume, #more {
-    display: none;
 }
 
 /* Footer Begin */
