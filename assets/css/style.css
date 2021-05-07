@@ -155,9 +155,6 @@ header nav ul li a:hover {
 }
 
 #work-section {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .box {
@@ -171,9 +168,7 @@ header nav ul li a:hover {
 }
 
 #projects {
-    height:auto;
-    width: auto;
-    margin-bottom: 5px;
+    
 }
 
 #projects h3 {
@@ -203,38 +198,29 @@ header nav ul li a:hover {
     margin-top: 5px;
 }
 
-#row-two {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    box-sizing: border-box;
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
-}
-
 #rpga {
     height: 250px;
+    width: 100%;
     background-image: url(../images/rpga.png);
-    background-size: cover;
-    align-content: center;
-
+    background-size: 100%;
+    background-position: center;
 }
 
 #robot-gladiator {
     height: 250px;
+    width: 100%;
     background-image: url(../images/robot-gladiator.png);
     background-size: cover;
+    background-position: center;
 }
 
 #run-buddy:hover, #rpga:hover, #robot-gladiator:hover {
     border: solid black 3px;
 }
 
-
+#contact, #resume, #more {
+    font-size: 30px;
+}
 
 #contact ul li a {
     text-decoration: none;
